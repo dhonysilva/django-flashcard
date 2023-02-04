@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://dhonysilva-literate-orbit-5v6gxwrqxf7r69-8000.preview.app.github.dev',
+    'https://farmcontrol.fly.dev',
+]
 
 # Application definition
 
@@ -37,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.humanize",
     'cards.apps.CardsConfig',
 ]
 
